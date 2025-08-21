@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 
 // Pages (Ensure filenames match exactly!)
 import Home from "./Pages/Home";                     // Home.jsx
-import Product from "./Pages/Product";               // Product.jsx
+import Product from "./Pages/product";               // Product.jsx
 import SingleProduct from "./Pages/SingleProduct";   // SingleProduct.jsx
 import About from "./Pages/About";                   // About.jsx
 import Login from "./Pages/Login";                   // Login.jsx
