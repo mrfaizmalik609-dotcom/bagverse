@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import confettiGif from '../assets/images/confetti.gif'; // 💡 Add your own gif here
 
-function Thankyou() {
+function ThankYou() {
   return (
     <>
       <Header />
@@ -67,4 +67,4 @@ function Thankyou() {
   );
 }
 
-export default Thankyou;
+export default ThankYou;

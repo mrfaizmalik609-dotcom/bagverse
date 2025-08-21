@@ -3,7 +3,7 @@ import { sendPasswordResetEmail } from "firebase/auth";
 import { auth } from "../Firebase";
 import { Link } from "react-router-dom";
 
-function Forgetpassword() {
+function ForgetPassword() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
@@ -73,4 +73,4 @@ function Forgetpassword() {
   );
 }
 
-export default Forgetpassword;
+export default ForgetPassword;
