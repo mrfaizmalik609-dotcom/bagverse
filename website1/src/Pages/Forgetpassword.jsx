@@ -32,10 +32,9 @@ function Forgetpassword() {
         className="p-4 rounded shadow"
         style={{
           width: "100%",
-          maxWidth: "400px",
+          maxWidth: "600px",  // ✅ Only one maxWidth
           backgroundColor: "#fff",
-          maxWidth: '600px',
-          height: '300px',
+          height: "300px",
         }}
       >
         <h3 className="text-center mb-4" style={{ color: "#0a0f2c" }}>
