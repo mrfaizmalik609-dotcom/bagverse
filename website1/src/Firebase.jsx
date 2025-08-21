@@ -2,7 +2,9 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 
+// 🔑 Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAfiQgMCSeJiZHDemb-qgEnUHr9fLRK6OE",
   authDomain: "bag-verse.firebaseapp.com",
@@ -12,6 +14,10 @@ const firebaseConfig = {
   appId: "1:682187092407:web:0633dc1501eec9e09b3832"
 };
 
+// Initialize Firebase app
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
-export const auth = getAuth(app);
+
+// Export Firebase services
+export const auth = getAuth(app);       // Authentication
+export const db = getFirestore(app);    // Firestore database
+export const storage = getStorage(app); // Firebase storage
