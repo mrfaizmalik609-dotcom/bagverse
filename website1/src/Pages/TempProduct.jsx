@@ -3,7 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
 import Header from "../components/Header";
 
-import Product1 from "../assets/images/Product-1.jpg";
+// All image imports lowercase (case-sensitive fix for Vercel)
+import Product1 from "../assets/images/product-1.jpg";
 import Product2 from "../assets/images/product-2.jpg";
 import Product3 from "../assets/images/product-3.jpg";
 import Product4 from "../assets/images/product-4.jpg";

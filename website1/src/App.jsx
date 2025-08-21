@@ -1,22 +1,21 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Header.jsx";
 
-// Pages (Ensure filenames match exactly!)
-import Home from "./Pages/Home";                     // Home.jsx
-import TempProduct from "./Pages/TempProduct";               // Product.jsx
-import SingleProduct from "./Pages/SingleProduct";   // SingleProduct.jsx
-import About from "./Pages/About";                   // About.jsx
-import Login from "./Pages/Login";                   // Login.jsx
-import Cart from "./Pages/Cart";                     // Cart.jsx
-import Contact from "./Pages/Contact";               // Contact.jsx
-import Signup from "./Pages/Signup";                 // Signup.jsx
-import Checkout from "./Pages/Checkout";             // Checkout.jsx
-import ThankYou from "./Pages/ThankYou";             // ThankYou.jsx
-import ForgetPassword from "./Pages/ForgetPassword"; // ForgetPassword.jsx
-import Wishlist from "./Pages/Wishlist";             // Wishlist.jsx
+// Pages (All with .jsx extensions)
+import Home from "./Pages/Home.jsx";
+import TempProduct from "./Pages/TempProduct.jsx";
+import SingleProduct from "./Pages/SingleProduct.jsx";
+import About from "./Pages/About.jsx";
+import Login from "./Pages/Login.jsx";
+import Cart from "./Pages/Cart.jsx";
+import Contact from "./Pages/Contact.jsx";
+import Signup from "./Pages/Signup.jsx";
+import Checkout from "./Pages/Checkout.jsx";
+import ThankYou from "./Pages/ThankYou.jsx";
+import ForgetPassword from "./Pages/ForgetPassword.jsx";
+import Wishlist from "./Pages/Wishlist.jsx";
 
-import { CartProvider } from "./context/CartContext";
+import { CartProvider } from "./context/CartContext.jsx";
 
 function App() {
   return (
@@ -37,7 +36,6 @@ function App() {
           <Route path="/forgot-password" element={<ForgetPassword />} />
           <Route path="/wishlist" element={<Wishlist />} />
         </Routes>
-        <Footer />
       </Router>
     </CartProvider>
   );

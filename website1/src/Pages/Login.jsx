@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../Firebase";
 import { useNavigate, Link } from "react-router-dom";
-import LoginImage from "../assets/images/Login-image.png"; // ✅ Ensure image path is correct
+import LoginImage from "../assets/images/login-image.png"; // ✅ Correct path
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -41,7 +41,7 @@ function Login() {
         className="d-flex flex-column flex-md-row shadow rounded overflow-hidden"
         style={{
           backgroundColor: "#fff",
-          maxWidth: "1100px", // ✅ Made same as Signup box
+          maxWidth: "1100px",
           width: "100%",
           minHeight: "500px",
         }}
@@ -63,9 +63,7 @@ function Login() {
         <form
           onSubmit={handleLogin}
           className="p-4 d-flex flex-column justify-content-center"
-          style={{
-            flex: "1",
-          }}
+          style={{ flex: "1" }}
         >
           <h3 className="text-center mb-4" style={{ color: "#0a0f2c" }}>
             𝕷𝖔𝖌𝖎𝖓
@@ -104,7 +102,7 @@ function Login() {
           <div className="text-center">
             <span>Don’t have an account? </span>
             <Link to="/signup" className="text-decoration-none">
-              Sign in
+              Sign up
             </Link>
           </div>
         </form>
