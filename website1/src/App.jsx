@@ -2,18 +2,19 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-import Home from "./Pages/Home";
-import Product from "./Pages/Product";           // ✅ Product.jsx
-import SingleProduct from "./Pages/SingleProduct"; // ✅ SingleProduct.jsx
-import About from "./Pages/About";
-import Login from "./Pages/Login";               // ✅ Login.jsx
-import Cart from "./Pages/Cart";
-import Contact from "./Pages/Contact";
-import Signup from "./Pages/Signup";
-import Checkout from "./Pages/Checkout";
-import ThankYou from "./Pages/ThankYou";         // ✅ ThankYou.jsx
-import ForgetPassword from "./Pages/ForgetPassword"; // ✅ ForgetPassword.jsx
-import Wishlist from "./Pages/Wishlist";
+// Pages (Ensure filenames match exactly!)
+import Home from "./Pages/Home";                     // Home.jsx
+import Product from "./Pages/Product";               // Product.jsx
+import SingleProduct from "./Pages/SingleProduct";   // SingleProduct.jsx
+import About from "./Pages/About";                   // About.jsx
+import Login from "./Pages/Login";                   // Login.jsx
+import Cart from "./Pages/Cart";                     // Cart.jsx
+import Contact from "./Pages/Contact";               // Contact.jsx
+import Signup from "./Pages/Signup";                 // Signup.jsx
+import Checkout from "./Pages/Checkout";             // Checkout.jsx
+import ThankYou from "./Pages/ThankYou";             // ThankYou.jsx
+import ForgetPassword from "./Pages/ForgetPassword"; // ForgetPassword.jsx
+import Wishlist from "./Pages/Wishlist";             // Wishlist.jsx
 
 import { CartProvider } from "./context/CartContext";
 
