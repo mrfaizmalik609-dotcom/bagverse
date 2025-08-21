@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 
 // Pages (Ensure filenames match exactly!)
 import Home from "./Pages/Home";                     // Home.jsx
-import Product from "./Pages/Product";               // Product.jsx
+import TempProduct from "./Pages/TempProduct";               // Product.jsx
 import SingleProduct from "./Pages/SingleProduct";   // SingleProduct.jsx
 import About from "./Pages/About";                   // About.jsx
 import Login from "./Pages/Login";                   // Login.jsx
@@ -25,7 +25,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/product" element={<Product />} />
+          <Route path="/product" element={<TempProduct />} />
           <Route path="/product/:id" element={<SingleProduct />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
