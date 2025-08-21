@@ -1,18 +1,20 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+
 import Home from "./Pages/Home";
-import Product from "./Pages/Product";           // ✅ Correct capitalization
+import Product from "./Pages/Product";           // ✅ Product.jsx
+import SingleProduct from "./Pages/SingleProduct"; // ✅ SingleProduct.jsx
 import About from "./Pages/About";
-import Login from "./Pages/Login";               // ✅ L capital
+import Login from "./Pages/Login";               // ✅ Login.jsx
 import Cart from "./Pages/Cart";
 import Contact from "./Pages/Contact";
 import Signup from "./Pages/Signup";
-import SingleProduct from "./Pages/SingleProduct"; // ✅ Correct capitalization
 import Checkout from "./Pages/Checkout";
-import ThankYou from "./Pages/ThankYou";           // ✅ T and Y capital
-import ForgetPassword from "./Pages/ForgetPassword"; // ✅ Correct capitalization
+import ThankYou from "./Pages/ThankYou";         // ✅ ThankYou.jsx
+import ForgetPassword from "./Pages/ForgetPassword"; // ✅ ForgetPassword.jsx
 import Wishlist from "./Pages/Wishlist";
+
 import { CartProvider } from "./context/CartContext";
 
 function App() {
