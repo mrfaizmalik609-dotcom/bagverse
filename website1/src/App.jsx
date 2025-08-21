@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 
-// Pages (All with .jsx extensions)
 import Home from "./Pages/Home.jsx";
 import TempProduct from "./Pages/TempProduct.jsx";
 import SingleProduct from "./Pages/SingleProduct.jsx";
@@ -21,21 +21,26 @@ function App() {
   return (
     <CartProvider>
       <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/product" element={<TempProduct />} />
-          <Route path="/product/:id" element={<SingleProduct />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/checkout" element={<Checkout />} />
-          <Route path="/thankyou" element={<ThankYou />} />
-          <Route path="/forgot-password" element={<ForgetPassword />} />
-          <Route path="/wishlist" element={<Wishlist />} />
-        </Routes>
+        <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
+          <Header />
+          <main style={{ flex: 1 }}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/product" element={<TempProduct />} />
+              <Route path="/product/:id" element={<SingleProduct />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="/thankyou" element={<ThankYou />} />
+              <Route path="/forgot-password" element={<ForgetPassword />} />
+              <Route path="/wishlist" element={<Wishlist />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
       </Router>
     </CartProvider>
   );

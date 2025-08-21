@@ -3,16 +3,16 @@ import { Link, useNavigate } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
 import Header from "../components/Header";
 
-// Use placeholders for missing images
-const Product1 = "https://via.placeholder.com/300x280?text=Product+1";
-const Product2 = "https://via.placeholder.com/300x280?text=Product+2";
-const Product3 = "https://via.placeholder.com/300x280?text=Product+3";
-const Product4 = "https://via.placeholder.com/300x280?text=Product+4";
-const Product5 = "https://via.placeholder.com/300x280?text=Product+5";
-const Product6 = "https://via.placeholder.com/300x280?text=Product+6";
-const Product7 = "https://via.placeholder.com/300x280?text=Product+7";
-const Product8 = "https://via.placeholder.com/300x280?text=Product+8";
-const Product9 = "https://via.placeholder.com/300x280?text=Product+9";
+// All image imports lowercase (case-sensitive fix for Vercel)
+import Product1 from "../assets/images/product-1.jpg";
+import Product2 from "../assets/images/product-2.jpg";
+import Product3 from "../assets/images/product-3.jpg";
+import Product4 from "../assets/images/product-4.jpg";
+import Product5 from "../assets/images/product-5.jpg";
+import Product6 from "../assets/images/product-6.jpg";
+import Product7 from "../assets/images/product-7.jpg";
+import Product8 from "../assets/images/product-8.jpg";
+import Product9 from "../assets/images/product-9.jpg";
 
 function TempProduct() {
   const navigate = useNavigate();
