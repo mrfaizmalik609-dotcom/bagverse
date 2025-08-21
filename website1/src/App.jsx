@@ -12,7 +12,7 @@ import Cart from "./Pages/Cart";                     // Cart.jsx
 import Contact from "./Pages/Contact";               // Contact.jsx
 import Signup from "./Pages/Signup";                 // Signup.jsx
 import Checkout from "./Pages/Checkout";             // Checkout.jsx
-import ThankYou from "./Pages/thankYou";             // ThankYou.jsx
+import ThankYou from "./Pages/ThankYou";             // ThankYou.jsx
 import ForgetPassword from "./Pages/ForgetPassword"; // ForgetPassword.jsx
 import Wishlist from "./Pages/Wishlist";             // Wishlist.jsx
 
